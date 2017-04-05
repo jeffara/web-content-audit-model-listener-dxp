@@ -34,7 +34,7 @@ public class WebcontentauditModelListener extends BaseModelListener<JournalArtic
 	
 	@Override
 	public void onAfterCreate(JournalArticle model) throws ModelListenerException {
-		System.out.println("Web Content ID: " + model.getArticleId() + "Added!");
+//		System.out.println("Web Content ID: " + model.getArticleId() + "Added!");
 		
 		auditMessageSender = new AuditMessageSender();
 		
@@ -45,7 +45,7 @@ public class WebcontentauditModelListener extends BaseModelListener<JournalArtic
 
 	@Override
 	public void onAfterUpdate(JournalArticle model) throws ModelListenerException {
-		System.out.println("Web Content ID: " + model.getArticleId() + " Updated!");
+//		System.out.println("Web Content ID: " + model.getArticleId() + " Updated!");
 		
 		auditMessageSender = new AuditMessageSender();
 		
@@ -56,7 +56,7 @@ public class WebcontentauditModelListener extends BaseModelListener<JournalArtic
 	
 	@Override
 	public void onAfterRemove(JournalArticle model) throws ModelListenerException {
-		System.out.println("Web Content ID: " + model.getArticleId() + " Deleted!");
+//		System.out.println("Web Content ID: " + model.getArticleId() + " Deleted!");
 		
 		auditMessageSender = new AuditMessageSender();
 		
